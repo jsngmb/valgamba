@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Gamba</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="images/valicon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="navbar-brand">Val&nbsp;Gamba</div>
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto text-center mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contacts">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" onclick="appearPage(event, 'portfolio')" href="#">Artists</a>
+                </li>
+            </ul>
+          </div>
+        <!-- <div class="navbar-link">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Artists</a></li>
+            </ul>
+        </div> -->
+    </nav>
+
+    <main>
+        <div class="main-bg text-center">
+            <img src="images/tats.png" class="hero img-fluid" alt="">
+        </div>
+    </main>
+    
+    <div class="services py-5 text-center text-light" id="services">
+        <h1 class="text-uppercase fw-bold">Services</h1>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-pen-clip mb-5" style="font-size: 3em;"></i>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, natus? Eius beatae commodi corrupti reprehenderit, quisquam iusto quaerat adipisci dolor labore, exercitationem, sunt rem et. Quam minus aliquam ab ullam.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-brands fa-think-peaks mb-5" style="font-size: 3em;"></i>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, natus? Eius beatae commodi corrupti reprehenderit, quisquam iusto quaerat adipisci dolor labore, exercitationem, sunt rem et. Quam minus aliquam ab ullam.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-pen-nib mb-5" style="font-size: 3em;"></i>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, natus? Eius beatae commodi corrupti reprehenderit, quisquam iusto quaerat adipisci dolor labore, exercitationem, sunt rem et. Quam minus aliquam ab ullam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-bg"></div>
+    <div class="about container" id="about" style="margin-top: -5em;">
+        
+        <div class="row align-items-center text-dark">
+            <div class="col-md-6 text-center text-md-start">
+                <img src="images/v.jpg" style="width: 30em; border-radius: 5px;" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0 text-md-start text-center">
+                <h1 class="fw-bold text-uppercase">About</h1>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique eveniet sunt harum cumque minima aliquid aspernatur omnis earum expedita minus. Ex deserunt eius odio incidunt reprehenderit corrupti unde atque est! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                <div class="socials">
+                    <a class="btn btn-primary" href="https://www.facebook.com/valgamba29" target="_blank"><i class="fa-brands fa-facebook-f me-1"></i>Facebook</a>
+                    <a class="btn btn-danger" href="https://www.youtube.com/channel/UCeuSus9UUAD0ZO2r5zYBOQQ" target="_blank"><i class="fa-brands fa-youtube me-1"></i>Youtube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vlog my-5">
+        <div class="container">
+            <h1 class="text-dark text-center text-uppercase fw-bold">Vlogs</h1>
+            <div class="row mt-5">  
+                <div class="col-lg-6">
+                <iframe height="525" class="w-100" src="https://www.youtube.com/embed/onkTyWoYAOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6 mt-5 mt-md-0 rec-vid">
+                    <div class="row">
+                        <div class="col-md-6 mt-md-3 mt-lg-0">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/onkTyWoYAOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h6 class="card-title">Episode 01 - "A Woman in Distress"</h6>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-3 mt-lg-0">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/280qpdTi5ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                  <h6 class="card-title">Episode 2 - Woman Portrait</h6>
+                                  <p class="card-text"><small class="text-muted">247 views</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/bixoIX0LaGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h6 class="card-title">Episode 3 - Sisters Charcoal Portrait</h6>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/JxyBdO37tSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                  <h6 class="card-title">Episode 4 - Ivana Alawi Soft Pastel</h6>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/uTRh_OUgm08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h6 class="card-title">Episode 5 - Mayor Marcy Teodoro</h6>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/GJJvYfdsKsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                  <h6 class="card-title">Episode 6 - 10x13 Medium Charcoal</h6>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/7kivKxOX554" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h6 class="card-title">Episode 7 - 10x13 Charcoal</h6>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/ZZSoF1_THuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                  <h6 class="card-title">Episode 8 - 18x24 Caricature</h6>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/bhsiM96tz8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h6 class="card-title">Episode 9 - 18x24 Charcoal</h6>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <div class="card">
+                                <iframe height="250" class="w-100 vid" src="https://www.youtube.com/embed/pXxL23Qp3is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                  <h6 class="card-title">Episode 10 - 14x18 Pastel (Colored)</h6>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <h1>Popular Videos</h1>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <div class="card mb-3 bg-transparent text-dark">
+                                <div class="row g-0">
+                                  <div class="col-md-6">
+                                    <iframe height="150" class="w-100" src="https://www.youtube.com/embed/onkTyWoYAOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Episode 01 - "A Woman in Distress" Oil on Canvas by Val Gamba</h6>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-transparent text-dark">
+                                <div class="row g-0">
+                                  <div class="col-md-6">
+                                    <iframe height="150" class="w-100" src="https://www.youtube.com/embed/280qpdTi5ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Episode 2 - Woman Portrait by Val Gamba</h6>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-transparent text-dark">
+                                <div class="row g-0">
+                                  <div class="col-md-6">
+                                    <iframe height="150" class="w-100" src="https://www.youtube.com/embed/bixoIX0LaGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Episode 3 - Sisters Charcoal Portrait 10x13 by Val Gamba</h6>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card bg-transparent text-dark">
+                                <div class="row g-0">
+                                  <div class="col-md-6">
+                                    <iframe height="150" class="w-100" src="https://www.youtube.com/embed/JxyBdO37tSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Episode 4: Ivana Alawi Soft Pastel 15x20 by Val Gamba</h6>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                              
+
+                        </table>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery my-5 container text-dark">
+        <h1 class="text-center text-uppercase fw-bold">My Works</h1>
+        <div class="dropdown my-5">
+            <div class="find">
+                <div class="row">
+                    <div class="category col-md-6">
+                        <button class="btn dropdown-toggle" style="background-color: #E45826; color: white;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Categories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="search col-md-6 mt-3 mt-md-0">
+                        <input type="text" class="" placeholder="Search . . .">
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <img src="images/tat1.jpg" class="img-fluid rounded w-100 mb-4" alt="">
+                    <img src="images/tat4.jpg" class="img-fluid rounded w-100 mb-md-4" alt="">
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <img src="images/tat2.png" class="img-fluid rounded w-100 mb-4" alt="">
+                    <img src="images/tat5.png" class="img-fluid rounded w-100 mb-4" alt="">
+                    <img src="images/tat8.jpg" class="img-fluid rounded w-100 mb-md-4" alt="">
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <img src="images/tat3.png" class="img-fluid rounded w-100 mb-4" alt="">
+                    <img src="images/tat6.png" class="img-fluid rounded w-100 mb-md-4" alt="">
+                </div>
+                
+            </div>
+            <div class="btn-image text-center">
+            <button class="btn text-uppercase fw-bold px-5" style="background-color: #E45826; color: white;">More Images</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="location text-dark container my-5" id="contacts">
+        <div class="row">
+            <div class="get-in-touch col-md-6">
+                <h1 class="fw-bold">Get in touch</h1>
+                <input type="text" class="mt-3" placeholder="Search . . .">
+                <div class="form-floating mt-3">
+                    <textarea class="form-control text-dark" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px;background-color: transparent;"></textarea>
+                    <label for="floatingTextarea2">Input your message here. . .</label>
+                </div>
+                <div class="submit-btn mt-3 text-center">
+                    <button class="btn text-uppercase fw-bold px-5" style="background-color: #E45826; color: white;">Submit</button>
+                </div>
+            </div>
+            <div class="map col-md-6">
+                <h1 class="fw-bold">Location</h1>
+                <iframe class="rounded w-100 mt-3" height="290" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0709210500004!2d120.99885421466394!3d14.537935889842396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b76d78d691%3A0xc63ba935a347fcdf!2sMetro%20Point%20Mall!5e0!3m2!1sen!2sph!4v1649351188399!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Metro Point Mall, EDSA, corner Taft Ave, Pasay, Metro Manila</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: black;">
+        <div class="container text-light" >
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="logo mb-3 mb-md-0 text-center text-lg-start p-5">
+                        <h1>Artist&nbsp;Corner</h1>
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur dipisicing elit. Id ipsam provident nisi</p>
+                        <a href="" style="color: #E45826;">See more -></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="categories">
+                        <h5 class="text-uppercase fw-bold">Categories</h5>
+                        <div class="row">
+                            <div class="col-4">
+                                <ul>
+                                    <li>
+                                        <a href="">Piercing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Portraiture</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Realism</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <li>
+                                        <a href="">Piercing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Portraiture</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Realism</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <li>
+                                        <a href="">Piercing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Portraiture</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Realism</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-0 mt-md-5">
+                    <div class="socials">
+                        <h5 class="text-uppercase fw-bold">Socials</h5>
+                        <div class="icons d-flex">
+                            <ul class="d-flex">
+                                <li>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="update-text d-flex align-items-center mb-3">
+                        <input type="text" class="mt-2 w-100" placeholder="Enter email to receive updates and newsletter">
+                        <div class="send-btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="terms-priv mb-3">
+                        <div class="row text-uppercase">
+                            <div class="col-md-4 mb-3">
+                                <a href="">Terms</a>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <a href="">Privacy</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="">Compliances</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright text-center text-light p-2" style="background-color: #292929;">
+        <small>Copyright © 2005 All Rights Reserved by Val Gamba</small>
+    </div>
+    <script src="https://kit.fontawesome.com/c2b020b549.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

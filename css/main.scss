@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    // background: linear-gradient(#000000ec), url("../images/vinpat.png");
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: linear-gradient(#000000ec), url("../images/vinpat.png");
+    display: flex;
+    overflow: hidden !important;
+    position: fixed !important; /* Set the navbar to fixed position */
+    top: 0 !important; /* Position the navbar at the top of the page */
+    width: 100%;
+    align-items: center;
+    
+    justify-content: space-between;
+    z-index: 2;
+    .navbar-brand {
+        font-family: 'Great Vibes';
+        font-size: 2.5rem;
+ 
+        text-decoration: none;
+        color: #F0A500 !important;
+        margin: 0 2rem;
+    }
+    .menu-btn {
+        margin: 1.5rem;
+        color: white;
+        font-size: 1.5em;
+    }
+    .collapse {
+        ul {
+            li {
+                &:hover {
+                    background: rgba(128, 128, 128, 0.442);
+                }
+                a {
+                    text-decoration: none !important;
+                    color: white !important;
+                    padding: .5rem !important;
+                    font-size: 1.5em !important;
+
+                    &:hover {
+                        font-weight: bold !important;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-link {
+        display: none;
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+main {
+    .main-bg {
+        background: linear-gradient(#0000009f), url("../images/bg2.jpg") no-repeat top center;
+        min-height: 675px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+
+        .hero {
+            width: 20rem;
+            margin-top: 14rem;
+        }
+    }
+}
+.services {
+    background: linear-gradient(#000000ec), url("../images/vinpat.png");
+}
+.about-bg {
+    background: linear-gradient(#0000009f), url("../images/bg1.jpg") no-repeat top center;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.gallery {
+    // .category {
+    //     .dropdown-toggle {
+    //         background: transparent;
+    //     }
+    // }
+    .search {
+        input {
+        background-color: transparent; 
+        border: none;
+        border-bottom: 1px solid gray; 
+        border-radius: 0;
+        outline: none;
+        width: 100%;
+        color: black;
+        }
+        
+    }
+}
+
+.location {
+    .get-in-touch {
+        input {
+            background-color: transparent; 
+            border: none;
+            border-bottom: 1px solid gray; 
+            border-radius: 0;
+            outline: none;
+            width: 100%;
+            color: black;
+        }
+    }
+}
+
+footer {
+    background: linear-gradient(#000000ec), url("../images/vinpat.png");
+    .logo {
+        h1 {
+            font-family: 'Great Vibes';
+            font-size: 3rem;
+            color: #F0A500 !important;
+        }
+    }
+    .categories {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .socials {
+        .icons {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style-type: none;
+                    
+                    .fa-brands {
+                        text-decoration: none;
+                        color: white;
+                        margin: 5px 20px;
+                        font-size: 1.8em;
+
+                        &:nth-child(1) {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .update-text {
+        input {
+            width: 100%;
+            background: transparent;
+            outline: none;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+    }
+    .terms-priv {
+        a {
+            text-decoration: none;
+            color: white;
+            
+        }
+    }
+}
+@media screen and (min-width: 900px)
+{
+    nav {
+        clip-path: ellipse(60% 100% at 50% 0%);
+        flex-direction: column;
+        position: inherit !important;
+        .navbar-brand {
+            font-size: 3.5rem;
+        }
+        .menu-btn {
+            display: none;
+        }
+        
+        .collapse {
+            ul {
+                li {
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .main-bg {
+            margin-top: -5em;
+
+            .hero {
+                width: 23rem;
+            }
+        }
+    }
+    .vlog {
+        .rec-vid {
+            max-height: 525px;
+            overflow: auto;
+            display:inline-block;
+            .card {
+                .vid {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

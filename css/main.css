@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000ec)), url("../images/vinpat.png");
+  background: linear-gradient(#000000ec), url("../images/vinpat.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden !important;
+  position: fixed !important;
+  /* Set the navbar to fixed position */
+  top: 0 !important;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+}
+
+nav .navbar-brand {
+  font-family: 'Great Vibes';
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #F0A500 !important;
+  margin: 0 2rem;
+}
+
+nav .menu-btn {
+  margin: 1.5rem;
+  color: white;
+  font-size: 1.5em;
+}
+
+nav .collapse ul li:hover {
+  background: rgba(128, 128, 128, 0.442);
+}
+
+nav .collapse ul li a {
+  text-decoration: none !important;
+  color: white !important;
+  padding: .5rem !important;
+  font-size: 1.5em !important;
+}
+
+nav .collapse ul li a:hover {
+  font-weight: bold !important;
+}
+
+nav .navbar-link {
+  display: none;
+}
+
+nav .navbar-link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav .navbar-link li {
+  list-style-type: none;
+}
+
+nav .navbar-link a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+nav .navbar-link a:hover {
+  font-weight: bold;
+}
+
+main .main-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000009f)), url("../images/bg2.jpg") no-repeat top center;
+  background: linear-gradient(#0000009f), url("../images/bg2.jpg") no-repeat top center;
+  min-height: 675px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+main .main-bg .hero {
+  width: 20rem;
+  margin-top: 14rem;
+}
+
+.services {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000ec)), url("../images/vinpat.png");
+  background: linear-gradient(#000000ec), url("../images/vinpat.png");
+}
+
+.about-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000009f)), url("../images/bg1.jpg") no-repeat top center;
+  background: linear-gradient(#0000009f), url("../images/bg1.jpg") no-repeat top center;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.gallery .search input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  color: black;
+}
+
+.location .get-in-touch input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  color: black;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000ec)), url("../images/vinpat.png");
+  background: linear-gradient(#000000ec), url("../images/vinpat.png");
+}
+
+footer .logo h1 {
+  font-family: 'Great Vibes';
+  font-size: 3rem;
+  color: #F0A500 !important;
+}
+
+footer .categories ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .categories ul li {
+  list-style-type: none;
+}
+
+footer .categories ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .socials .icons ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .socials .icons ul li {
+  list-style-type: none;
+}
+
+footer .socials .icons ul li .fa-brands {
+  text-decoration: none;
+  color: white;
+  margin: 5px 20px;
+  font-size: 1.8em;
+}
+
+footer .socials .icons ul li .fa-brands:nth-child(1) {
+  margin-left: 0px;
+}
+
+footer .update-text input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+footer .terms-priv a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    -webkit-clip-path: ellipse(60% 100% at 50% 0%);
+            clip-path: ellipse(60% 100% at 50% 0%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: inherit !important;
+  }
+  nav .navbar-brand {
+    font-size: 3.5rem;
+  }
+  nav .menu-btn {
+    display: none;
+  }
+  nav .collapse ul li:hover {
+    background: none;
+  }
+  main .main-bg {
+    margin-top: -5em;
+  }
+  main .main-bg .hero {
+    width: 23rem;
+  }
+  .vlog .rec-vid {
+    max-height: 525px;
+    overflow: auto;
+    display: inline-block;
+  }
+  .vlog .rec-vid .card .vid {
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
