@@ -324,13 +324,27 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 4.6rem;
+    height: 4.6rem;
     margin-bottom: 1.15rem;
-    border-radius: 1.1rem;
-    background: var(--ink);
+    border-radius: 50%;
+    border: 1px solid rgba(20, 17, 15, 0.08);
+    background: linear-gradient(135deg, #1c1511, #3a2418);
     color: var(--paper-soft);
-    font-size: 1.3rem;
+    font-size: 1.45rem;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 10px 24px rgba(20, 17, 15, 0.12);
+}
+
+.services-section .col-md-4:nth-child(1) .service-icon {
+    background: linear-gradient(135deg, #1c1511, #7d1f13);
+}
+
+.services-section .col-md-4:nth-child(2) .service-icon {
+    background: linear-gradient(135deg, #1c1511, #8a5a18);
+}
+
+.services-section .col-md-4:nth-child(3) .service-icon {
+    background: linear-gradient(135deg, #1c1511, #5b2e24);
 }
 
 .service-card h3 {
