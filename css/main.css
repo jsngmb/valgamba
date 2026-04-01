@@ -316,8 +316,21 @@ main {
 
 .service-card {
     height: 100%;
-    padding: 2rem 1.6rem;
-    text-align: left;
+    position: relative;
+    padding: 2.2rem 1.7rem 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 74%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(20, 17, 15, 0.16), transparent);
+    transform: translateX(-50%);
 }
 
 .service-icon {
@@ -326,7 +339,7 @@ main {
     justify-content: center;
     width: 4.6rem;
     height: 4.6rem;
-    margin-bottom: 1.15rem;
+    margin: 0 auto 1.3rem;
     border-radius: 50%;
     border: 1px solid rgba(20, 17, 15, 0.08);
     background: linear-gradient(135deg, #1c1511, #3a2418);
@@ -352,10 +365,13 @@ main {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.06em;
+    text-align: center;
 }
 
 .service-card p {
     color: var(--muted);
+    max-width: 28ch;
+    margin: 0 auto;
 }
 
 .about-section {
