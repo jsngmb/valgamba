@@ -1,26 +1,66 @@
-//smooth scrolling
+const body = document.body;
+const nav = document.querySelector('.site-nav');
+const navLinks = [...document.querySelectorAll('.nav-link')];
+const revealItems = [...document.querySelectorAll('[data-reveal]')];
+const mobileMenu = document.querySelector('.navbar-collapse');
+const bsCollapse = mobileMenu ? bootstrap.Collapse.getOrCreateInstance(mobileMenu, { toggle: false }) : null;
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+body.classList.add('reveal-ready');
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+const updateNavState = () => {
+    if (!nav) {
+        return;
+    }
 
-      // Store hash
-      var hash = this.hash;
+    nav.classList.toggle('is-scrolled', window.scrollY > 18);
+};
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
+updateNavState();
+window.addEventListener('scroll', updateNavState, { passive: true });
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+const sections = navLinks
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+const setActiveLink = () => {
+    const offset = window.scrollY + 150;
+    let currentId = sections[0]?.id;
+
+    sections.forEach((section) => {
+        if (offset >= section.offsetTop) {
+            currentId = section.id;
+        }
+    });
+
+    navLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.getAttribute('href') === `#${currentId}`);
+    });
+};
+
+setActiveLink();
+window.addEventListener('scroll', setActiveLink, { passive: true });
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth < 992 && bsCollapse) {
+            bsCollapse.hide();
+        }
+    });
 });
+
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, revealObserver) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+        });
+    }, { threshold: 0.18 });
+
+    revealItems.forEach((item) => observer.observe(item));
+} else {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
+}
