@@ -344,15 +344,20 @@ main {
     border: 1px solid rgba(178, 58, 40, 0.16);
     background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.96), rgba(247, 239, 228, 0.9) 58%, rgba(226, 206, 180, 0.92) 100%);
     color: var(--accent-deep);
-    font-size: 1.9rem;
-    line-height: 1;
+    font-size: 0;
     box-shadow: 0 14px 28px rgba(20, 17, 15, 0.08);
     position: relative;
 }
 
 .service-icon::before {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
     line-height: 1;
-    transform: translateY(1px);
+    transform: none;
 }
 
 .service-icon::after {
