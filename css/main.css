@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Great+Vibes&display=swap');
 
 :root {
     --paper: #efe2d0;
@@ -94,10 +94,11 @@ h3 {
 }
 
 .navbar-brand {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem !important;
-    letter-spacing: 0.12em;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem !important;
+    letter-spacing: 0.02em;
     color: var(--accent-deep) !important;
+    line-height: 1;
 }
 
 .nav-link {
@@ -408,8 +409,9 @@ main {
 
 .videos-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+    gap: 1.75rem;
+    align-items: start;
 }
 
 .featured-video,
@@ -420,6 +422,8 @@ main {
 
 .featured-video {
     overflow: hidden;
+    position: sticky;
+    top: 7rem;
 }
 
 .featured-video iframe,
@@ -429,13 +433,13 @@ main {
 }
 
 .featured-video iframe {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 10.2;
 }
 
 .video-list {
     display: grid;
     gap: 1rem;
-    max-height: 760px;
+    max-height: 780px;
     overflow: auto;
     padding-right: 0.25rem;
 }
@@ -454,11 +458,11 @@ main {
 }
 
 .video-card iframe {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 6.4;
 }
 
 .video-copy {
-    padding: 1rem 1.05rem 1.15rem;
+    padding: 0.9rem 1rem 1rem;
 }
 
 .video-copy h3 {
@@ -689,6 +693,10 @@ body.reveal-ready [data-reveal].is-visible {
 
     .hero-meta {
         grid-template-columns: 1fr;
+    }
+
+    .featured-video {
+        position: static;
     }
 
     .hero-artframe {
