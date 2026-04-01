@@ -762,6 +762,10 @@ body.reveal-ready [data-reveal].is-visible {
         text-align: center;
     }
 
+    .hero-visual {
+        display: none;
+    }
+
     .hero-lead,
     .section-heading,
     .section-heading.text-center {
