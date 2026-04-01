@@ -268,33 +268,38 @@ main {
 
 .hero-artframe {
     position: relative;
-    padding: 1.1rem;
-    border-radius: 34px;
-    background: linear-gradient(135deg, #201915, #3a2418);
-    box-shadow: 20px 20px 0 rgba(178, 58, 40, 0.18);
-    transform: rotate(-2deg);
-    margin-top: 8.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    margin-top: 6.75rem;
+    overflow: visible;
+    clip-path: none;
 }
 
 .hero-artframe::before {
-    content: 'VG';
-    position: absolute;
-    top: -1.2rem;
-    right: 1.2rem;
-    padding: 0.35rem 0.7rem;
-    border-radius: 999px;
-    background: var(--gold);
-    color: #20140d;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.15rem;
-    letter-spacing: 0.18em;
+    content: none;
 }
 
 .hero-image {
-    width: min(100%, 420px);
+    width: min(100%, 520px);
     margin: 0 auto;
-    border-radius: 24px;
-    transform: rotate(2deg);
+    border-radius: 0;
+    transform: none;
+    box-shadow: none;
+    display: block;
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-visual::after {
+    content: none;
 }
 
 .services-section {
@@ -780,7 +785,6 @@ body.reveal-ready [data-reveal].is-visible {
 
     .hero-artframe {
         transform: none;
-        box-shadow: 0 12px 32px rgba(178, 58, 40, 0.15);
         margin-top: 1rem;
     }
 
