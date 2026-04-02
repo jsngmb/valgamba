@@ -416,25 +416,37 @@ main {
 .video-cta {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
     margin-top: 1.25rem;
-    padding: 0.85rem 1.3rem;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--paper-soft);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 246, 239, 0.84);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.video-cta::after {
+    content: '';
+    width: 2.2rem;
+    height: 1px;
+    margin-left: 0.7rem;
+    background: currentColor;
+    opacity: 0.7;
+    transition: width 0.2s ease, opacity 0.2s ease;
 }
 
 .video-cta:hover {
-    transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateX(4px);
+    color: #ffffff;
+}
+
+.video-cta:hover::after {
+    width: 3rem;
+    opacity: 1;
 }
 
 .videos-layout {
