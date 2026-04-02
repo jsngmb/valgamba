@@ -332,10 +332,20 @@ main {
     height: 4.1rem;
     margin: 0 auto 1.5rem;
     border-radius: 50%;
-    color: #fff7ef;
-    font-size: 1.3rem;
+    color: transparent;
+    font-size: 0;
     background: linear-gradient(145deg, #8f2c1f, #5f2017);
     box-shadow: 0 14px 24px rgba(143, 44, 31, 0.18);
+}
+
+.service-icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff7ef;
+    font-size: 1.3rem;
+    line-height: 1;
+    transform: translate(-50%, -50%);
 }
 
 .service-card:nth-child(2) .service-icon,
