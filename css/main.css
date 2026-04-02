@@ -706,7 +706,8 @@ main {
     font-weight: 700;
 }
 
-.footer-socials a .fa-brands {
+.footer-socials a .fa-brands,
+.footer-socials a .fa-solid {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -715,6 +716,12 @@ main {
     border-radius: 50%;
     background: rgba(232, 112, 77, 0.15);
     color: var(--accent-bright);
+}
+
+.footer-socials .footer-phone .fa-solid {
+    background: rgba(232, 112, 77, 0.15);
+    color: var(--accent-bright) !important;
+    box-shadow: inset 0 0 0 1px rgba(232, 112, 77, 0.08);
 }
 
 .copyright {
