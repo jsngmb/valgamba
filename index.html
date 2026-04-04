@@ -1,229 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Love Atlas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Gamba | Tattoo Artist</title>
+    <meta name="description" content="Val Gamba tattoo and art portfolio featuring custom tattoo work, portrait-inspired pieces, videos, and artist contact details.">
+    <link rel="icon" href="images/valicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="entrance-layer" id="entranceLayer">
-    <div class="curtain-wrap" aria-hidden="true">
-      <div class="curtain-panel curtain-left"></div>
-      <div class="curtain-panel curtain-right"></div>
-      <div class="curtain-clasp">
-        <span class="curtain-heart"></span>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg site-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Val Gamba</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="siteNav">
+                <ul class="navbar-nav gap-lg-2 text-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section class="loading-screen" id="loadingScreen" aria-live="polite">
-      <div class="loading-orb"></div>
-      <p class="eyebrow">Preparing your memories</p>
-      <h2>Opening your love atlas...</h2>
-    </section>
-
-    <section class="password-screen hidden" id="passwordScreen" aria-labelledby="passwordTitle">
-      <div class="password-card">
-        <p class="eyebrow">Private space</p>
-        <h2 id="passwordTitle">Enter your password to continue.</h2>
-        <p class="password-copy">This page is for the two of you only.</p>
-
-        <form id="passwordForm" class="password-form">
-          <label for="sitePassword">Password</label>
-          <input
-            id="sitePassword"
-            name="sitePassword"
-            type="password"
-            inputmode="numeric"
-            autocomplete="off"
-            placeholder="Enter password"
-            required
-          >
-          <button class="button button-primary" type="submit">Open website</button>
-          <p class="password-error hidden" id="passwordError">Wrong password. Try again.</p>
-        </form>
-      </div>
-    </section>
-  </div>
-
-  <div class="page-shell">
-    <header class="hero">
-      <nav class="topbar">
-        <span class="brand">Our Love Atlas</span>
-        <a href="#places" class="toplink">Add memories</a>
-      </nav>
-
-      <div class="hero-grid">
-        <section class="hero-copy">
-          <p class="eyebrow">A website for your favorite love story</p>
-          <h1>For every date, drive, and little moment worth keeping.</h1>
-          <p class="intro">
-            Build a cute space for your photos and videos together, then organize them by the places
-            that matter most, like Tagaytay sunsets, coffee dates, and weekend escapes.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#places">Start uploading</a>
-            <a class="button button-secondary" href="#gallery">See sample gallery</a>
-          </div>
-
-          <div class="hero-note">
-            <strong>Note:</strong> this site will try to save online with Firebase first.
-            If Firebase is not fully ready yet, it falls back to this browser on this device.
-          </div>
+    <main id="home">
+        <section class="hero-section">
+            <div class="hero-backdrop"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <span class="eyebrow">Tattoo artist / Portrait-inspired work / Manila</span>
+                    <h1>Bold artwork with character, texture, and a signature hand-drawn feel.</h1>
+                    <p class="hero-lead">
+                        Val Gamba creates tattoo pieces and visual art that blend expressive line work,
+                        portrait influence, and personal storytelling. Each design is shaped to feel custom,
+                        memorable, and true to the client.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#works" class="btn btn-primary">View Works</a>
+                        <a href="#contact" class="btn btn-outline-light">Book an Inquiry</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="meta-card">
+                            <strong>Custom Concepts</strong>
+                            <span>Designed with mood, meaning, and detail.</span>
+                        </div>
+                        <div class="meta-card">
+                            <strong>Artist Content</strong>
+                            <span>Videos, sketches, and process-driven updates.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-reveal>
+                    <div class="hero-artframe">
+                        <img src="images/val-new.png" class="img-fluid hero-image" alt="Val Gamba portrait artwork">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="hero-collage" aria-label="Sample couple gallery">
-          <figure class="polaroid polaroid-large">
-            <video autoplay muted loop playsinline preload="metadata" aria-label="Couple memory video one">
-              <source src="videos/2.mp4" type="video/mp4">
-            </video>
-          </figure>
-          <figure class="polaroid polaroid-small top">
-            <video autoplay muted loop playsinline preload="metadata" aria-label="Couple memory video two">
-              <source src="videos/1.mp4" type="video/mp4">
-            </video>
-          </figure>
-          <figure class="polaroid polaroid-small bottom">
-            <video autoplay muted loop playsinline preload="metadata" aria-label="Couple memory video three">
-              <source src="videos/3.mp4" type="video/mp4">
-            </video>
-          </figure>
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-heading text-center" data-reveal>
+                    <span class="section-kicker">Services</span>
+                    <h2>Artwork grounded in personality, detail, and strong visual direction.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4" data-reveal>
+                        <article class="service-card">
+                            <span class="service-icon fa-solid fa-feather-pointed"></span>
+                            <h3>Custom Tattoo Design</h3>
+                            <p>Original concepts shaped around your story, placement, and preferred visual style.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4" data-reveal>
+                        <article class="service-card">
+                            <span class="service-icon fa-solid fa-image-portrait"></span>
+                            <h3>Portrait-Based Pieces</h3>
+                            <p>Detailed compositions inspired by faces, emotion, and expressive tonal work.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4" data-reveal>
+                        <article class="service-card">
+                            <span class="service-icon fa-solid fa-comments"></span>
+                            <h3>Creative Consultations</h3>
+                            <p>Planning support for ideas, references, and direction before the final artwork begins.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
-      </div>
-    </header>
 
-    <main>
-      <section class="section story-strip">
-        <div class="section-heading">
-          <p class="eyebrow">Why this works</p>
-          <h2>Your dates become a visual timeline.</h2>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Place-based memories</h3>
-            <p>Each location gets its own card, so your Tagaytay trip, first coffee date, and future travels all stay organized.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Photos and videos</h3>
-            <p>Upload both image and video files, then preview them directly on the page for a scrapbook-style experience.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Ready to customize</h3>
-            <p>Start with this design now, then we can later add login, saving, comments, or a private dashboard for the two of you.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section gallery-section" id="gallery">
-        <div class="section-heading">
-          <p class="eyebrow">Starter gallery</p>
-          <h2>Moments that already feel special.</h2>
-        </div>
-
-        <div class="starter-gallery">
-          <figure class="gallery-card">
-            <img src="images/1.jpg" alt="Memory from gallery one">
-            <figcaption>Soft moments and quiet smiles.</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="images/2.jpg" alt="Memory from gallery two">
-            <figcaption>Another date worth keeping forever.</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="images/3.jpg" alt="Memory from gallery three">
-            <figcaption>The kind of memory you always come back to.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section places-section" id="places">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">Memory map</p>
-            <h2>Upload by place.</h2>
-          </div>
-          <p class="section-copy">Use the ready-made cards below, then add more places if you want your own full travel-and-date archive.</p>
-        </div>
-
-        <div class="places-grid" id="placesGrid">
-          <article class="place-card" data-place="Tagaytay">
-            <div class="place-top">
-              <span class="place-badge">Tagaytay</span>
-              <p class="place-description">Sunset views, coffee dates, bulalo stops, and chilly weather memories.</p>
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5" data-reveal>
+                        <div class="about-image-frame">
+                            <img src="images/v.jpg" class="img-fluid" alt="Val Gamba portrait">
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-reveal>
+                        <div class="section-heading">
+                            <span class="section-kicker">About The Artist</span>
+                            <h2>An artist shaped by decades of painting and nearly 15 years of tattoo work.</h2>
+                        </div>
+                        <div class="about-copy">
+                            <p>
+                                Val Gamba began painting in 1987, building a foundation in observation,
+                                composition, and expressive handmade work long before stepping into tattooing.
+                                That background continues to shape every piece with patience, character, and
+                                a strong visual point of view.
+                            </p>
+                            <p>
+                                With almost 15 years of tattoo experience, the work now brings together
+                                painterly discipline, portrait influence, and custom design thinking. Each
+                                artwork is approached to feel personal, intentional, and built around the
+                                story of the person wearing or collecting it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <label class="upload-box">
-              <input class="media-input" type="file" accept="image/*,video/*" multiple>
-              <span>Upload Tagaytay photos or videos</span>
-            </label>
-            <div class="memory-grid" aria-live="polite"></div>
-          </article>
+        </section>
 
-          <article class="place-card" data-place="Manila Date Night">
-            <div class="place-top">
-              <span class="place-badge">Manila Date Night</span>
-              <p class="place-description">City lights, dinners, movie nights, and all the spontaneous plans in between.</p>
+        <section class="section videos-section" id="videos">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <span class="section-kicker">Studio Videos</span>
+                    <h2>Watch the process, pacing, and personality behind the work.</h2>
+                    <a href="https://www.youtube.com/channel/UCeuSus9UUAD0ZO2r5zYBOQQ" target="_blank" rel="noopener noreferrer" class="video-cta">
+                        See more on YouTube
+                    </a>
+                </div>
+                <div class="videos-layout">
+                    <div class="featured-video" data-reveal>
+                        <iframe src="https://www.youtube.com/embed/onkTyWoYAOs" title="Featured Val Gamba video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-list">
+                        <article class="video-card" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/onkTyWoYAOs" title="Episode 1 video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-copy">
+                                <h3>Episode 01</h3>
+                                <p>A Woman in Distress</p>
+                            </div>
+                        </article>
+                        <article class="video-card" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/280qpdTi5ag" title="Episode 2 video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-copy">
+                                <h3>Episode 02</h3>
+                                <p>Woman Portrait</p>
+                            </div>
+                        </article>
+                        <article class="video-card" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/bixoIX0LaGM" title="Episode 3 video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-copy">
+                                <h3>Episode 03</h3>
+                                <p>Sisters Charcoal Portrait</p>
+                            </div>
+                        </article>
+                        <article class="video-card" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/JxyBdO37tSU" title="Episode 4 video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-copy">
+                                <h3>Episode 04</h3>
+                                <p>Ivana Alawi Soft Pastel</p>
+                            </div>
+                        </article>
+                        <article class="video-card" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/uTRh_OUgm08" title="Episode 5 video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-copy">
+                                <h3>Episode 05</h3>
+                                <p>Mayor Marcy Teodoro</p>
+                            </div>
+                        </article>
+                        <article class="video-card" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/GJJvYfdsKsw" title="Episode 6 video" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-copy">
+                                <h3>Episode 06</h3>
+                                <p>10x13 Medium Charcoal</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <label class="upload-box">
-              <input class="media-input" type="file" accept="image/*,video/*" multiple>
-              <span>Upload Manila date memories</span>
-            </label>
-            <div class="memory-grid" aria-live="polite"></div>
-          </article>
+        </section>
 
-          <article class="place-card" data-place="Weekend Getaway">
-            <div class="place-top">
-              <span class="place-badge">Weekend Getaway</span>
-              <p class="place-description">Road trips, staycations, quick escapes, and all the photos you take on the way.</p>
+        <section class="section works-section" id="works">
+            <div class="container">
+                <div class="section-heading text-center" data-reveal>
+                    <span class="section-kicker">Selected Works</span>
+                    <h2>A gallery of detailed pieces, tonal studies, and signature visual textures.</h2>
+                </div>
+                <div class="gallery-grid">
+                    <figure class="gallery-card tall" data-reveal>
+                        <img src="images/tat1.jpg" alt="Tattoo artwork 1">
+                    </figure>
+                    <figure class="gallery-card" data-reveal>
+                        <img src="images/tat2.png" alt="Tattoo artwork 2">
+                    </figure>
+                    <figure class="gallery-card" data-reveal>
+                        <img src="images/tat3.png" alt="Tattoo artwork 3">
+                    </figure>
+                    <figure class="gallery-card wide" data-reveal>
+                        <img src="images/tat4.jpg" alt="Tattoo artwork 4">
+                    </figure>
+                    <figure class="gallery-card" data-reveal>
+                        <img src="images/tat5.png" alt="Tattoo artwork 5">
+                    </figure>
+                    <figure class="gallery-card" data-reveal>
+                        <img src="images/tat6.png" alt="Tattoo artwork 6">
+                    </figure>
+                    <figure class="gallery-card" data-reveal>
+                        <img src="images/tat7.jpg" alt="Tattoo artwork 7">
+                    </figure>
+                    <figure class="gallery-card" data-reveal>
+                        <img src="images/tat8.jpg" alt="Tattoo artwork 8">
+                    </figure>
+                </div>
             </div>
-            <label class="upload-box">
-              <input class="media-input" type="file" accept="image/*,video/*" multiple>
-              <span>Upload getaway content</span>
-            </label>
-            <div class="memory-grid" aria-live="polite"></div>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section class="section create-section">
-        <div class="section-heading">
-          <p class="eyebrow">Add a new place</p>
-          <h2>Make space for your next destination.</h2>
-        </div>
-
-        <form class="place-form" id="placeForm">
-          <label>
-            Place name
-            <input type="text" id="placeName" name="placeName" placeholder="Example: Baguio, Elyu, First Anniversary">
-          </label>
-          <label>
-            Short description
-            <input type="text" id="placeDescription" name="placeDescription" placeholder="Example: Strawberry taho, foggy walks, and late-night talks">
-          </label>
-          <button class="button button-primary" type="submit">Create place card</button>
-        </form>
-      </section>
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-panel">
+                    <div class="contact-copy" data-reveal>
+                        <span class="section-kicker">Contact</span>
+                        <h2>Ready to talk about a custom piece or creative collaboration?</h2>
+                        <p>
+                            Reach out to discuss your tattoo concept, reference ideas, or artist booking inquiries.
+                            You can also visit the studio location below.
+                        </p>
+                        <div class="contact-links">
+                            <a href="https://www.facebook.com/valgamba29" target="_blank" rel="noopener noreferrer">
+                                <span class="fa-brands fa-facebook-f"></span>
+                                facebook.com/valgamba29
+                            </a>
+                            <a href="tel:+639064625348">
+                                <span class="fa-solid fa-phone"></span>
+                                +639 064 625 348
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCeuSus9UUAD0ZO2r5zYBOQQ" target="_blank" rel="noopener noreferrer">
+                                <span class="fa-brands fa-youtube"></span>
+                                YouTube Channel
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-map" data-reveal>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0709210500004!2d120.99885421466394!3d14.537935889842396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b76d78d691%3A0xc63ba935a347fcdf!2sMetro%20Point%20Mall!5e0!3m2!1sen!2sph!4v1649351188399!5m2!1sen!2sph" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Val Gamba location"></iframe>
+                        <p>Metro Point Mall, EDSA corner Taft Avenue, Pasay, Metro Manila</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-  </div>
 
-  <template id="placeCardTemplate">
-    <article class="place-card">
-      <div class="place-top">
-        <span class="place-badge"></span>
-        <p class="place-description"></p>
-      </div>
-      <label class="upload-box">
-        <input class="media-input" type="file" accept="image/*,video/*" multiple>
-        <span></span>
-      </label>
-      <div class="memory-grid" aria-live="polite"></div>
-    </article>
-  </template>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="footer-label">Artist Portfolio</span>
+                <h2>Val Gamba</h2>
+                <p>Portrait-inspired tattoo work, visual storytelling, and handcrafted designs shaped around personality and expression.</p>
+            </div>
+            <div class="footer-nav">
+                <span class="footer-label">Navigate</span>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#videos">Videos</a>
+                    <a href="#works">Works</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-connect">
+                <span class="footer-label">Connect</span>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/valgamba29" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <span class="fa-brands fa-facebook-f"></span>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="tel:+639064625348" aria-label="Phone" class="footer-phone">
+                        <span class="fa-solid fa-phone"></span>
+                        <span>+639 064 625 348</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCeuSus9UUAD0ZO2r5zYBOQQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <span class="fa-brands fa-youtube"></span>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>Copyright &copy; 2026 Val Gamba. All rights reserved.</small>
+        </div>
+    </footer>
 
-  <script type="module" src="script.js?v=9"></script>
+    <script src="https://kit.fontawesome.com/c2b020b549.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
